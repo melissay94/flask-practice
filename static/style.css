@@ -1,4 +1,4 @@
-h1 {
+h1, h2 {
   color: chartreuse;
   background-color: brown;
   text-align: center;
@@ -6,4 +6,27 @@ h1 {
   border-radius: 10px;
   margin-top: 2em;
   padding: 1em;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+li {
+  width: 33%;
+  height: 2em;
+}
+
+button {
+  background-color: chartreuse;
+  color: brown;
+  font-weight: bold;
+}
+
+.form {
+  text-align: center;
+  margin-top: 1em;
 }
