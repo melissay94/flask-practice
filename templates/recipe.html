@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe</title>
+</head>
+<body>
+  <h2>{{pie}} pie page!</h2>
+  <ul>
+    {%for i in range(0, len)%}
+      <li>{{ingredients[i]}}</li>
+    {%endfor%}
+  </ul>
+  <form method="POST" action="/recipe">
+    <label for="new-ingredient">Enter new ingredient: </label>
+    <input name="new-ingredient" placeholder="New Ingredient" />
+    <input name="pie-type" value="{{pie}}" hidden />
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
